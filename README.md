@@ -2,7 +2,7 @@
 This is the template repository for Lab 3 in the course Functional Programming with F#, DVA229 in Mälardalen University.
 
 ## Setup
-In this lab, you will need to create a program. To make the instructions IDE-agnostic, we provide them in command form.
+In this lab, you will need to create an executable program. To make the instructions IDE-agnostic, we provide them in command form.
 
 Run the following set of commands (assuming that `dotnet` is in your path)
 
@@ -24,7 +24,7 @@ You should now have a solution containing a project with some code that looks li
 printfn "Hello from F#"
 ```
 
-To make it possible to send and process arguments, here is a template of a minimal F# program that will print a message and its arguments.
+To make it possible to send and process arguments, here is a template of a minimal F# program with a specified entrypoint that will print a message and its arguments. For the sake of convention, the name `main` has been kept.
 ```fs
 // For more information see https://aka.ms/fsharp-console-apps
 
