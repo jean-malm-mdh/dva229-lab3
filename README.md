@@ -4,7 +4,7 @@ This is the template repository for Lab 3 in the course Functional Programming w
 ## Setup
 In this lab, you will need to create an executable program. To make the instructions IDE-agnostic, we provide them in command form.
 
-Run the following set of commands (assuming that `dotnet` is in your path)
+Run the following set of commands (assuming that `dotnet` is in your path *AND* that F# templates are installed)
 
 `dotnet new sln --name DVA229_Lab3`
 
