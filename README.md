@@ -52,6 +52,13 @@ Assuming that all has gone well, you may use the command `dotnet test`, which sh
 
 The NUnit template project comes with a test that just passes. It is of course up to you to write your own test cases to check the functionality. 
 
-We suggest that you start early, and test often!
+We suggest that you start early, and test often! A simple introduction to NUnit in F# can be found at https://learn.microsoft.com/en-us/dotnet/core/testing/unit-testing-fsharp-with-nunit#creating-the-first-test.
 
 We will expect completed submissions to have at least some reasonable test cases, and that tests are passing. This will be subject to automated checking, so please do not neglect it.
+
+### On Test Design
+In this lab, your task is to design a small program from scratch based on some specified behaviour. As such, we have not given you any test setup - as this would likely bias you w.r.t., how functions are designed, named etc.
+
+We can however note that functional-style programming lends itself well to the concept of "unit-level" testing. As pure functions should be able to consider only the inputs and expected outputs, it is quite straightforward to test each function in isolation, in a unit-test like manner. You may then compose those functions into new functions that can be tested, until you have a final program.
+
+Note that testing should not just cover the functioning, "happy" path of the functionality. You should also consider and test the negative side, e.g., error handling. That way you can easily show that you have considered and taken care of those cases - which will hopefully lead to less nasty surprises further down the line.
