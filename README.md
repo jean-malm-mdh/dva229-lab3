@@ -6,17 +6,17 @@ In this lab, you will need to create an executable program. To make the instruct
 
 Run the following set of commands (assuming that `dotnet` is in your path *AND* that F# templates are installed)
 
+To create a new solution file - which .NET uses to group projects together.
+
 `dotnet new sln --name DVA229_Lab3`
 
-This will create a solution file.
+This will create the project folder using the console template in the F# language. This will be your "runner" project
 
 `dotnet new console -lang "F#" --name Lab3`
 
-This will create the project folder using the console template in the F# language.
+This will add the project to the solution.
 
 `dotnet sln add .\Lab3\Lab3.fsproj`
-
-This will add the project to the solution.
 
 You should now have a solution containing a project with some code that looks like this.
 ```fs
