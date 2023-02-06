@@ -62,3 +62,26 @@ In this lab, your task is to design a small program from scratch based on some s
 We can however note that functional-style programming lends itself well to the concept of "unit-level" testing. As pure functions should be able to consider only the inputs and expected outputs, it is quite straightforward to test each function in isolation, in a unit-test like manner. You may then compose those functions into new functions that can be tested, until you have a final program.
 
 Note that testing should not just cover the functioning, "happy" path of the functionality. You should also consider and test the negative side, e.g., error handling. That way you can easily show that you have considered and taken care of those cases - which will hopefully lead to less nasty surprises further down the line.
+
+#### How to Write NUnit Tests
+Unit testing frameworks rely on so-called 'assertions' to check whether the test has passed or not.
+
+NUnit provides basic assertions in the `Assert` module. The one you shall likely use the most is `Assert.AreEqual(expected, actual)`. Note that it also provides some special wrappers for checks of typical properties, such as `Assert.IsTrue` or `Assert.IsEmpty`
+
+To create a F# NUnit test case, you write a function that accepts the unit `()` argument, and returns unit. The function shall also be marked using the `[<Test>]` attribute.
+
+The general design of a test case is: 
+1) Define the expected value.
+2) Compute the actual value.
+3) Use an assertion to compare them.
+
+An example:
+```fs
+[<Test>]
+// Note: backticks may be used to create definitions with spaces in names
+let ``Given Two Values, can compute Sum``() =
+    let v1 = 3
+    let v2 = 4
+    let expected = 7
+    Assert.AreEqual(expected, v1 + v2)
+```
