@@ -57,7 +57,7 @@ We suggest that you start early, and test often! A simple introduction to NUnit 
 We will expect completed submissions to have at least some reasonable test cases, and that tests are passing. This will be subject to automated checking, so please do not neglect it.
 
 ### On Test Design
-In this lab, your task is to design a small program from scratch based on some specified behaviour. As such, we have left the creation of test cases up to you! Should you want some spoilers, a few BDD-style tests have been created in the "WithTests" branch.
+In this lab, your task is to design a small program from scratch based on some specified behaviour. As such, we have left the creation of test cases up to you! Should you want some spoilers, a few [BDD-style](https://en.wikipedia.org/wiki/Behavior-driven_development) tests have been created in the "WithTests" branch.
 
 We can however note that functional-style programming lends itself well to the concept of "unit-level" testing. As pure functions should be able to consider only the inputs and expected outputs, it is quite straightforward to test each function in isolation, in a unit-test like manner. You may then compose those functions into new functions that can be tested, until you have a final program.
 
