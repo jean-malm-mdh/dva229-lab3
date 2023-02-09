@@ -78,10 +78,6 @@ The general design of a test case is:
 An example:
 ```fs
 [<Test>]
-// Note: backticks may be used to create definitions with spaces in names
-let ``Given Two Values, can compute Sum``() =
-    let v1 = 3
-    let v2 = 4
-    let expected = 7
-    Assert.AreEqual(expected, v1 + v2)
+let ``Given Two Values, can compute Sum``() = // Note: backticks may be used to create definitions with spaces in names
+    Assert.AreEqual(7, 3 + 4)
 ```
